@@ -30,11 +30,11 @@ public class MainClass {
             postiDisponibili = rs.getInt("posti_letto_disponibili");
         }
 
-        //System.out.println(codiceStruttura);
+        System.out.println(codiceStruttura);
         //System.out.println(postiDisponibili);
 
         //inserisce un paziente nel db (con il codice della struttura che può prenderlo in carico)
-        stmt.executeQuery("INSERT INTO Paziente(cf, nome, cognome, eta, comune_residenza, idOspedale) VALUES('DRNMTND2A29O801Y', 'Franco', 'Marconi', '69', 'ROMA', '" + codiceStruttura + "')");
+        stmt.executeQuery("INSERT INTO Paziente(cf, nome, cognome, eta, comune_residenza, idOspedale) VALUES('IRNMTND2A29O801Y', 'Franco', 'Marconi', '69', 'ROMA', '" + codiceStruttura + "')");
 
         //update ospedale decrementando il numero di posti letto
         postiDisponibili -= 1;
