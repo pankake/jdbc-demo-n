@@ -30,7 +30,7 @@ public class MainClass {
             postiDisponibili = rs.getInt("posti_letto_disponibili");
         }
 
-        System.out.println(codiceStruttura);
+        //System.out.println(codiceStruttura);
         //System.out.println(postiDisponibili);
 
         //inserisce un paziente nel db (con il codice della struttura che può prenderlo in carico)
